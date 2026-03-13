@@ -1,4 +1,4 @@
-// console.log("Jeba Grande");
+// console.log("Hello Word");
 
 // let nome = "Daniel Felipe Sehnem";
 // console.log(nome)
@@ -36,9 +36,12 @@ function somatoria(){
         }else{
             soma += numero;
         }
+        if (numero == 0){
+            continuar = false;
+            return;
+        }
 
         continuar = confirm("Deseja somar mais um número?????");
     }
     alert ("A soma dos numerais é: " + soma);
 }
-somatoria();
