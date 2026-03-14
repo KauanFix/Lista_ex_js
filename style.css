@@ -1,6 +1,14 @@
-html{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+@font-face {
+    font-family: 'Outer Wilds';
+    src: url('Fonts/ITC\ Serif\ Gothic\ Std\ Extra\ Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+html{
+    font-family: 'Outer Wilds';
+}
+
 
 .setinha_esq{
     opacity: 0;
@@ -14,7 +22,7 @@ html{
     visibility: hidden;
    transition: 0.3s;
    position: absolute;
-   transform: translateX(400px);
+   transform: translateX(420px);
 
 }
 
@@ -52,7 +60,7 @@ button{
     color: rgb(238, 135, 17);
     transition: 0.3s;
     background-color: transparent;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Outer Wilds';
     border: none;
     cursor: pointer;
 }
@@ -60,8 +68,9 @@ body{
     background-image: url(Images/fundo_outer.png);
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Outer Wilds';
 }
 button:hover{
    color: white;
 }
+
