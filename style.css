@@ -1,21 +1,67 @@
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.setinha_esq{
+    opacity: 0;
+    visibility: hidden;
+   transition: 0.3s;
+   position: absolute;
+   transform: translateX(-50px) scaleX(-1);
+}
+.setinha_dir{
+    opacity: 0;
+    visibility: hidden;
+   transition: 0.3s;
+   position: absolute;
+   transform: translateX(400px);
+
+}
+
+.botao{
+    display: flex;
+}
+
+.botao:hover .setinha_esq{
+    opacity: 1;
+    visibility: visible;
+}
+.botao:hover .setinha_dir{
+    opacity: 1;
+    visibility: visible;
+}
+
+h1{
+    color: darkorange;
+    font-size: 35;
+}
+h2{
+    color: darkorange;
+}
+
 .flex{
     display: flex;
-    justify-content: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    gap: 10px;
 }
+
 button{
-    margin: 10;
-    background-image: linear-gradient( rgb(136, 6, 6), rgb(145, 9, 133));
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 8;
+    font-size: 20;
+    color: rgb(238, 135, 17);
     transition: 0.3s;
-    border: 2px solid black;
-    padding: 3px;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    cursor: pointer;
 }
 body{
-    background-image: linear-gradient(aqua, rgba(0, 128, 0, 0.678));
+    background-image: url(Images/fundo_outer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 button:hover{
-    padding: 5px;
-    border-radius: 10%;
-    background-image: linear-gradient( rgb(180, 7, 151), rgb(185, 8, 8));
+   color: white;
 }
